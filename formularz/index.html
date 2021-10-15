@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Formularz</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Zarejestruj się</h2>
+      <form action="" method="POST" name="registration" autocomplete="off">
+        <label for="firstName">Imię</label>
+        <input type="text" name="firstName" id="firstName" />
+        <label for="lastName">Nazwisko</label>
+        <input type="text" name="lastName" id="lastName" />
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+        <label for="phone">Telefon</label>
+        <input type="number" name="phone" id="phone" min="0" />
+        <div class="row">
+          <div>
+            <label for="postal">Kod pocztowy</label>
+            <input type="text" name="postal" id="postal" maxlength="6" />
+          </div>
+          <div>
+            <label for="city">Miejscowość</label>
+            <input type="text" name="city" id="city" />
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <label for="street">Ulica</label>
+            <select name="street" id="street">
+              <option value="">--Wybierz--</option>
+            </select>
+          </div>
+          <div><label for="houseNb">Numer domu</label><input type="number" id="houseNb" name="houseNb" /></div>
+          <div><label for="apartNb">Numer mieszkania</label><input type="number" id="apartNb" name="apartNb" /></div>
+        </div>
+        <button type="submit">Wyślij</button>
+      </form>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

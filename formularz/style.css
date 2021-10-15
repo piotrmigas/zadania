@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+.container {
+  width: 500px;
+  margin: 25px auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* form */
+
+form {
+  padding: 20px;
+  background: #2c3e50;
+  color: #fff;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+form label,
+form input,
+form button {
+  border: 0;
+  margin-bottom: 3px;
+  display: block;
+  width: 100%;
+  outline: none;
+}
+
+form input {
+  height: 25px;
+  line-height: 25px;
+  background: #fff;
+  color: #000;
+  padding: 0 6px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+form .error {
+  color: #ff0000;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+#postal,
+#street {
+  width: 100px;
+}
+
+#houseNb,
+#apartNb {
+  width: 125px;
+}
+
+#city {
+  width: 310px;
+}
+
+/* Hide input arrows */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* select */
+
+select {
+  outline: none;
+}
+
+/* submit btn */
+
+form button {
+  height: 30px;
+  line-height: 30px;
+  background: #e67e22;
+  color: #fff;
+  margin-top: 10px;
+  cursor: pointer;
+}
